@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "automerge": true,
+  "automergeType": "branch",
+  "major": {
+    "automerge": false
+  },
+  "regexManagers": [
+  {
+    "fileMatch": ["^kustomization\\.yaml$"],
+    "matchStrings": ["https://github.com/tektoncd/pipeline/releases/download/(?<currentValue>.*?)/release.yaml"],
+    "datasourceTemplate": "github-releases"
+  }
+]
+}
