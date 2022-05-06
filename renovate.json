@@ -10,7 +10,7 @@
   "regexManagers": [
   {
     "fileMatch": ["^kustomization\\.yaml$"],
-    "matchStrings": ["https://github.com/tektoncd/pipeline/releases/download/(?<currentValue>.*?)/release.yaml"],
+    "matchStrings": ["https://github.com/tektoncd/pipeline/releases/download/(?<currentValue>.*?)/release.yaml # renovate: depName=(?<depName>.*?)\\\\n"],
     "datasourceTemplate": "github-releases"
   }
 ]
